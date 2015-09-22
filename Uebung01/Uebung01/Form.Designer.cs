@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panAndZoomPictureBox1 = new Emgu.CV.UI.PanAndZoomPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.panAndZoomPictureBox1)).BeginInit();
+            this.pictureBox = new Emgu.CV.UI.PanAndZoomPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // panAndZoomPictureBox1
+            // pictureBox
             // 
-            this.panAndZoomPictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panAndZoomPictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.panAndZoomPictureBox1.Name = "panAndZoomPictureBox1";
-            this.panAndZoomPictureBox1.Size = new System.Drawing.Size(284, 261);
-            this.panAndZoomPictureBox1.TabIndex = 0;
-            this.panAndZoomPictureBox1.TabStop = false;
+            this.pictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(284, 261);
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
             // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.panAndZoomPictureBox1);
+            this.Controls.Add(this.pictureBox);
             this.Name = "Form";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.panAndZoomPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Emgu.CV.UI.PanAndZoomPictureBox panAndZoomPictureBox1;
+        private Emgu.CV.UI.PanAndZoomPictureBox pictureBox;
     }
 }
 
