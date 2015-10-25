@@ -27,6 +27,9 @@ namespace PGM
             }
             using (TextWriter writer = new StreamWriter(args[1], false, Encoding.ASCII))
             {
+                //Saves a lot of space to use unix line endings instead of windows
+                //(in the bridge example it's a compresion rate of about 1.3)
+                writer.NewLine = "\n";
                 writer.WriteLine("P2"); //Type: P2 = Graymap / ASCII
                 writer.WriteLine("#Converted by JP"); //Comment
                 writer.WriteLine($"{image.Cols} {image.Rows}"); //Width and Height
